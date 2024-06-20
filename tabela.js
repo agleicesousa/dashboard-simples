@@ -48,7 +48,6 @@ const table = document.getElementById("tbody");
 Orders.forEach(item => {
     const newRow = document.createElement('tr');
 
-    // Determine the class for payment status
     let paymentClass = '';
     if (item.paymenStatus === 'Devido') {
         paymentClass = 'devido';
@@ -58,7 +57,6 @@ Orders.forEach(item => {
         paymentClass = 'reembolsado';
     }
 
-    // Determine the class for shipping status
     let shippingClass = '';
     if (item.shipping === 'Pendente') {
         shippingClass = 'pendente';
@@ -84,3 +82,4 @@ const themeToggler = document.querySelector(".theme-toggler");
 themeToggler.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme-variables');
 });
+
