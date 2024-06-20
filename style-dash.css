@@ -502,6 +502,12 @@ main .recent-orders a {
   gap: 1rem;
   margin-bottom: 1rem;
 }
+.show-all {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* ==================SALES ANALYTICS============= */
 .right .sales-analytics {
@@ -610,16 +616,26 @@ main .recent-orders a {
 
   main .insights {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: -10px;
   }
 
   main .recent-orders {
     width: 94%;
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin: 2rem 0 0 8.8rem;
+    margin: 2rem 0 0 0;
   }
+
+  .right .recent-updates {
+    margin-top: -50px;
+  }
+  .show-all {
+    position: absolute;
+    bottom: -40px;
+
+  }
+  
 
   main table tbody td:last-child,
   main table thead tr th:last-child,
@@ -727,4 +743,6 @@ main .recent-orders a {
   .right .top button span {
     font-size: 2rem;
   }
+
+ 
 }
