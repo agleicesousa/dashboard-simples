@@ -589,7 +589,7 @@ main .recent-orders a {
   }
 
   aside {
-    position: fixed;
+    position: relative;
     left: -100%;
     background: var(--color-white);
     width: 10rem;
@@ -744,5 +744,8 @@ main .recent-orders a {
     font-size: 2rem;
   }
 
- 
+  aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 0;
+  }
 }
