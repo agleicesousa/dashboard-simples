@@ -385,6 +385,13 @@ main .recent-orders table:hover {
   box-shadow: none;
 }
 
+main .recent-orders .show-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 main table tbody td {
   height: 2.8rem;
   border-bottom: 1px solid var(--color-light);
