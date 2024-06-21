@@ -243,6 +243,14 @@ aside .sidebar .message-count {
   border-radius: var(--border-radius-1);
 }
 
+aside .sidebar .logoutButton {
+  background: var(--color);
+  color: var(--color);
+  padding: 2px 10px;
+  font-size: 11px;
+  border-radius: var(--border-radius-1);
+}
+
 /*-------------------- main ----------------------*/
 
 main {

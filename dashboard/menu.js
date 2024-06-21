@@ -10,3 +10,7 @@
         menu.style.display = 'none';
         menu.style.height = '0'; 
     });
+
+    document.getElementById('logoutButton').addEventListener('click', function() {
+        window.location.href = '../index.html';
+    });    
